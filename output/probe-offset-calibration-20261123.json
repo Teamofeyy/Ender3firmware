@@ -29,5 +29,29 @@
     "Source Configuration.h remains at pre-test -1.02. Test changes M851 at runtime only, no EEPROM writes.",
     "Test retains original model geometry/extrusion, uses 100 percent flow, one homing and fresh local 3x3 grid, and removes M290."
   ],
-  "test_file": "C:\\Users\\user\\Documents\\Marlin-2.1.2.10\\output\\CE3E3V2_firstlayer60x60mm_OFFSETminus0p61_NO_BABYSTEP.gcode"
+  "test_file": "C:\\Users\\user\\Documents\\Marlin-2.1.2.10\\output\\CE3E3V2_firstlayer60x60mm_OFFSETminus0p61_NO_BABYSTEP.gcode",
+  "trials": [
+    {
+      "offset_Z": -0.61,
+      "babystep_mm": 0,
+      "flow_percent": 100,
+      "hotend_C": 200,
+      "bed_C": 50,
+      "result": "User reports much more uniform appearance, but parallel lines separate with almost no force. Photos show gaps between strands. Working diagnosis: first-layer gap too large; not final calibration.",
+      "evidence": [
+        "codex-clipboard-37887c54-ece9-44af-9aab-35403e09f798.png",
+        "codex-clipboard-f14de79b-7f6e-476d-bf61-d0e6ee4efbd0.png",
+        "codex-clipboard-73f26d57-3bfa-4ecd-917f-01a7ecb713bc.png"
+      ]
+    },
+    {
+      "offset_Z": -0.66,
+      "babystep_mm": 0,
+      "flow_percent": 100,
+      "hotend_C": 200,
+      "bed_C": 50,
+      "result": "Pending. Lower nozzle by 0.05mm relative to -0.61, changing only M851 and measuring a fresh mesh."
+    }
+  ],
+  "active_test_file": "C:\\Users\\user\\Documents\\Marlin-2.1.2.10\\output\\CE3E3V2_firstlayer60x60mm_OFFSETminus0p66_NO_BABYSTEP.gcode"
 }
