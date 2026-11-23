@@ -1512,7 +1512,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -44.1, -3.3, 0 } // XY from bracket; calibrate Z on this printer before using the mesh.
+#define NOZZLE_TO_PROBE_OFFSET { -44.1, -3.3, -1.02 } // XY from bracket; Z measured with 0.10 mm paper on 2026-11-22.
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
