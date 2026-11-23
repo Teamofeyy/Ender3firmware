@@ -50,8 +50,20 @@
       "flow_percent": 100,
       "hotend_C": 200,
       "bed_C": 50,
-      "result": "Pending. Lower nozzle by 0.05mm relative to -0.61, changing only M851 and measuring a fresh mesh."
+      "result": "Improved bonding compared with -0.61; user reports localized light-transmitting gaps remain, but strands are harder to separate. No final calibration established.",
+      "evidence": [
+        "codex-clipboard-b2fd18cd-a427-4862-b6c1-b92f1bcdbd01.png",
+        "codex-clipboard-f47511e9-bc99-4dc1-a122-7c07fc12f643.png"
+      ]
+    },
+    {
+      "offset_Z": -0.68,
+      "babystep_mm": 0,
+      "flow_percent": 100,
+      "hotend_C": 200,
+      "bed_C": 50,
+      "result": "Pending. Lower nozzle 0.02mm from the -0.66 test, preserving other commands. If ridges appear in solid regions while local gaps persist, stop global lowering and investigate spatial error."
     }
   ],
-  "active_test_file": "C:\\Users\\user\\Documents\\Marlin-2.1.2.10\\output\\CE3E3V2_firstlayer60x60mm_OFFSETminus0p66_NO_BABYSTEP.gcode"
+  "active_test_file": "C:\\Users\\user\\Documents\\Marlin-2.1.2.10\\output\\CE3E3V2_firstlayer60x60mm_OFFSETminus0p68_NO_BABYSTEP.gcode"
 }
