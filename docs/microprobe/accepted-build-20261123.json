@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-23",
+  "status": "SUCCESS",
+  "environment": "STM32G0B1RE_btt",
+  "marlin": "2.1.2.10",
+  "board": "BTT SKR Mini E3 V3.0",
+  "mcu": "STM32G0B1RE",
+  "offset": [
+    -44.1,
+    -3.3,
+    -0.68
+  ],
+  "steps_per_mm": [
+    80.5,
+    80.2,
+    400.0,
+    97.5
+  ],
+  "bed_bounds_mm": {
+    "X": 235,
+    "Y": 205,
+    "Z": 250
+  },
+  "mesh": [
+    3,
+    3
+  ],
+  "homing_Z": "mechanical endstop; probe homing disabled",
+  "binary": "output/firmware-Zminus0p68.bin",
+  "platformio_binary": ".pio/build/STM32G0B1RE_btt/firmware.bin",
+  "size_bytes": 225132,
+  "sha256": "371df097a9e42c30db8e92dba5c55824c85294b91e3cdaf2bb2b8961001ae77f",
+  "flash_origin": "0x8002000",
+  "initial_stack_pointer": "0x20023fd8",
+  "reset_vector": "0x80281b5",
+  "RAM_bytes": 20016,
+  "flash_bytes": 224824,
+  "duration_s": 80.663,
+  "automatic_upload": false,
+  "EEPROM_save_confirmed": false,
+  "full_bed_mesh_with_accepted_offset_confirmed": false,
+  "preserved": "Configuration_adv.h (fans, PID/current defaults), platformio.ini and SanityCheck byte-identical to pre-finalization snapshot",
+  "steps_array_found_in_binary": true
+}

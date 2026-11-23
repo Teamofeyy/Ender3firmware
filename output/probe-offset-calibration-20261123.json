@@ -26,7 +26,7 @@
   "notes": [
     "Paper contact inferred from user stopping at first light drag per calibration instructions.",
     "Earlier cross-X measurements are provisional and must not be used for twist correction: axes lost trusted position during idle.",
-    "Source Configuration.h remains at pre-test -1.02. Test changes M851 at runtime only, no EEPROM writes.",
+    "At acceptance, Configuration.h default was updated to -0.68. Historical test files change runtime M851 only and do not save EEPROM.",
     "Test retains original model geometry/extrusion, uses 100 percent flow, one homing and fresh local 3x3 grid, and removes M290."
   ],
   "test_file": "C:\\Users\\user\\Documents\\Marlin-2.1.2.10\\output\\CE3E3V2_firstlayer60x60mm_OFFSETminus0p61_NO_BABYSTEP.gcode",
@@ -62,8 +62,17 @@
       "flow_percent": 100,
       "hotend_C": 200,
       "bed_C": 50,
-      "result": "Pending. Lower nozzle 0.02mm from the -0.66 test, preserving other commands. If ridges appear in solid regions while local gaps persist, stop global lowering and investigate spatial error."
+      "result": "User chose to stop tuning at this result; runtime M851 confirmed X-44.10 Y-3.30 Z-0.68. Accepted as the working offset. No claim of a perfectly uniform layer.",
+      "accepted_by_user": true
     }
   ],
-  "active_test_file": "C:\\Users\\user\\Documents\\Marlin-2.1.2.10\\output\\CE3E3V2_firstlayer60x60mm_OFFSETminus0p68_NO_BABYSTEP.gcode"
+  "active_test_file": null,
+  "accepted_test_file": "C:\\Users\\user\\Documents\\Marlin-2.1.2.10\\output\\CE3E3V2_firstlayer60x60mm_OFFSETminus0p68_NO_BABYSTEP.gcode",
+  "accepted_offset_Z": -0.68,
+  "persistence": {
+    "firmware_default_Z": -0.68,
+    "eeprom_save_confirmed": false,
+    "full_bed_mesh_with_accepted_offset_confirmed": false,
+    "full_mesh_setup_file": "output/FINAL_measure_full_bed_Zminus0p68.gcode"
+  }
 }

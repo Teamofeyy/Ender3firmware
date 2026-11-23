@@ -1512,7 +1512,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -44.1, -3.3, -1.02 } // XY from bracket; Z measured with 0.10 mm paper on 2026-11-22.
+#define NOZZLE_TO_PROBE_OFFSET { -44.1, -3.3, -0.68 } // XY from bracket; Z accepted after first-layer tests on 2026-11-23.
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
