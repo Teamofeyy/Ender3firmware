@@ -26,19 +26,28 @@
     3
   ],
   "homing_Z": "mechanical endstop; probe homing disabled",
-  "binary": "output/firmware-Zminus0p68.bin",
+  "binary": "output/firmware-Zminus0p68-M501fix.bin",
   "platformio_binary": ".pio/build/STM32G0B1RE_btt/firmware.bin",
   "size_bytes": 225132,
-  "sha256": "371df097a9e42c30db8e92dba5c55824c85294b91e3cdaf2bb2b8961001ae77f",
+  "sha256": "cb4b343eef9869e1faea086cbb0369400ddc8ebc1408efa0823a873006394b09",
   "flash_origin": "0x8002000",
   "initial_stack_pointer": "0x20023fd8",
   "reset_vector": "0x80281b5",
   "RAM_bytes": 20016,
   "flash_bytes": 224824,
-  "duration_s": 80.663,
+  "duration_s": 20.79,
   "automatic_upload": false,
-  "EEPROM_save_confirmed": false,
-  "full_bed_mesh_with_accepted_offset_confirmed": false,
-  "preserved": "Configuration_adv.h (fans, PID/current defaults), platformio.ini and SanityCheck byte-identical to pre-finalization snapshot",
-  "steps_array_found_in_binary": true
+  "EEPROM_save_confirmed": true,
+  "full_bed_mesh_with_accepted_offset_confirmed": true,
+  "preserved": "Configuration.h, Configuration_adv.h, platformio.ini and SanityCheck byte-identical to accepted -0.68 state",
+  "steps_array_found_in_binary": true,
+  "binary_alias": "output/firmware-Zminus0p68.bin",
+  "safety_fix": {
+    "scope": "Guard bilinear set_grid during EEPROM validation; no EEPROM layout change",
+    "source": "Marlin/src/module/settings.cpp",
+    "host_regression": "PASS; original branch failed mutation invariant",
+    "hardware_installed": false,
+    "runtime_recovered_by_power_cycle": true
+  },
+  "validation_limit": "Branch-level C# harness plus full STM32 C++ build; fixed firmware has not been installed or exercised on physical printer."
 }

@@ -1956,8 +1956,12 @@ void MarlinSettings::postprocess() {
         EEPROM_READ(start);                            // 2 ints
         #if ENABLED(AUTO_BED_LEVELING_BILINEAR)
           if (grid_max_x == (GRID_MAX_POINTS_X) && grid_max_y == (GRID_MAX_POINTS_Y)) {
-            if (!validating) set_bed_leveling_enabled(false);
-            bedlevel.set_grid(spacing, start);
+            // Validation does not assign spacing/start. Keep the live mesh intact
+            // until the real load can disable leveling with its original geometry.
+            if (!validating) {
+              set_bed_leveling_enabled(false);
+              bedlevel.set_grid(spacing, start);
+            }
             EEPROM_READ(bedlevel.z_values);            // 9 to 256 floats
           }
           else if (grid_max_x > (GRID_MAX_POINTS_X) || grid_max_y > (GRID_MAX_POINTS_Y)) {

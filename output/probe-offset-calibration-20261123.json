@@ -71,8 +71,32 @@
   "accepted_offset_Z": -0.68,
   "persistence": {
     "firmware_default_Z": -0.68,
-    "eeprom_save_confirmed": false,
-    "full_bed_mesh_with_accepted_offset_confirmed": false,
-    "full_mesh_setup_file": "output/FINAL_measure_full_bed_Zminus0p68.gcode"
+    "eeprom_save_confirmed": true,
+    "full_bed_mesh_with_accepted_offset_confirmed": true,
+    "EEPROM_version": "V88",
+    "EEPROM_bytes": 608,
+    "EEPROM_crc": 29126,
+    "loaded_full_mesh_rows_Y": [
+      [
+        0.2,
+        0.0125,
+        0.025
+      ],
+      [
+        0.0725,
+        0.0125,
+        0.1625
+      ],
+      [
+        0.195,
+        0.07,
+        0.125
+      ]
+    ],
+    "incident": "M501 with active bilinear leveling corrupted RAM Z/count to INT32_MAX; saved offset and mesh survived.",
+    "recovery": "User fully power-cycled the board and USB. M114 X0 Y0 Z0 Count0, M851 Z-0.68 and saved full grid verified. Leveling OFF.",
+    "runtime_position_valid_after_restart": true,
+    "full_mesh_setup_file": "output/FINAL_measure_full_bed_Zminus0p68.gcode",
+    "firmware_patch_installed": false
   }
 }
