@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-23",
+  "conditions": {
+    "hotend_C": 150,
+    "bed_C": 50,
+    "stepper_timeout_s": 0,
+    "homing": "mechanical Z endstop; one G28 before repeated probe and paper"
+  },
+  "center": {
+    "probe_XY": [
+      117.5,
+      117.5
+    ],
+    "signal_counts_Z": [
+      278,
+      277,
+      277
+    ],
+    "steps_per_mm_Z": 400,
+    "trigger_Z_last": 0.6925,
+    "paper_contact_Z": 0.18,
+    "paper_thickness_mm": 0.1,
+    "computed_probe_offset_Z": -0.6125,
+    "test_probe_offset_Z": -0.61
+  },
+  "notes": [
+    "Paper contact inferred from user stopping at first light drag per calibration instructions.",
+    "Earlier cross-X measurements are provisional and must not be used for twist correction: axes lost trusted position during idle.",
+    "Source Configuration.h remains at pre-test -1.02. Test changes M851 at runtime only, no EEPROM writes.",
+    "Test retains original model geometry/extrusion, uses 100 percent flow, one homing and fresh local 3x3 grid, and removes M290."
+  ],
+  "test_file": "C:\\Users\\user\\Documents\\Marlin-2.1.2.10\\output\\CE3E3V2_firstlayer60x60mm_OFFSETminus0p61_NO_BABYSTEP.gcode"
+}
